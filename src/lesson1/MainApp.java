@@ -1,6 +1,7 @@
 package lesson1;
 
 import lesson1.animal.Cat;
+import lesson1.animal.Dog;
 
 public class MainApp {
     public static void main(String[] args) {
@@ -12,6 +13,9 @@ public class MainApp {
         cat.info();
         cat2.info();
         Cat.doSomething();
-cat.callArray();
+        cat.callArray();
+        Dog dog = new Dog("Barsik", "Red", 44);
+        dog.info();
+        dog.wof();
     }
 }
