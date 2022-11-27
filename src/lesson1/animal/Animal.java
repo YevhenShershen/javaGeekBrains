@@ -25,6 +25,6 @@ public class Animal {
         System.out.println(name + " " + color +" " + age);
     }
     public void voice(){
-        System.out.println("VOICE");
+        System.out.println("ANIMAL VOICE");
     }
 }

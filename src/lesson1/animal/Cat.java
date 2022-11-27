@@ -16,22 +16,9 @@ public class Cat extends Animal {
       this.clawsLength = clawsLength;
 
   }
-//Гетерый и Сетеры. Правой кнопкой мыши Generate... потом Getter and Setter
-    //Геттер это метод который возвращает значение лежащее в поле
-    public String getName() {
-        return name;
+//Override
+    @Override
+    public void voice() {
+        System.out.println(name + " Meow");
     }
-//Сеттер для изминения значения в поле
-    public void setName(String name) {
-      if(name.length() > 4){
-        this.name = name;
-      }
-    }
-public static void doSomething(){
-      System.out.println(123);
 }
-        public static void callArray(){
-                String [] seasons  = {"Winter", "Spring", "Summer", "Autumn"};
-                System.out.println(seasons.length);
-            }
-        }

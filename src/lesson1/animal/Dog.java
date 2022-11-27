@@ -6,9 +6,6 @@ public class Dog extends Animal {
         super(name, color, age);
     }
 
-    public void wof(){
 
-        System.out.println("Wof Wof Wof");
-    }
 }
 

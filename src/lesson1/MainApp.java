@@ -9,13 +9,12 @@ public class MainApp {
 
         Cat cat2 = new Cat("Baron", "black", 44,12);
 //        cat2.age= 22;
-        cat.setName("Amu");
+
         cat.info();
         cat2.info();
-        Cat.doSomething();
-        cat.callArray();
         Dog dog = new Dog("Barsik", "Red", 44);
-        dog.info();
-        dog.wof();
+        cat.voice();
+        dog.voice();
+
     }
 }
