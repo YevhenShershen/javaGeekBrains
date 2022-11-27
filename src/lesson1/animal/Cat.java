@@ -1,4 +1,4 @@
-package lesson1;
+package lesson1.animal;
 
 public class Cat extends Animal {
     //4-и модификатора доступа: private default protected public

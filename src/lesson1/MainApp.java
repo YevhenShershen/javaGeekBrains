@@ -1,5 +1,7 @@
 package lesson1;
 
+import lesson1.animal.Cat;
+
 public class MainApp {
     public static void main(String[] args) {
         Cat cat = new Cat("Vaska", "White", 33);

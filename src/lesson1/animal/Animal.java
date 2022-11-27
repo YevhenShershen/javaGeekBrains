@@ -1,9 +1,9 @@
-package lesson1;
+package lesson1.animal;
 
 public class Animal {
     public String name;
     public String color;
-    int age;
+    public int age;
     public void info(){
         System.out.println(name + " " + color +" " + age);
     }
