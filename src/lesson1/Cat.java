@@ -8,7 +8,8 @@ public class Cat {
     //public доступ везде
     private String name;
     private String color;
-    private int age;
+    //static при изминении значения данные будут применены ко всем объектам данного класса
+    static int age;
     //Создаем конструктор который позволит проинициализировать наши объекты при создании
   public Cat ( String name, String color, int age){
       this.name = name;
