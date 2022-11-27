@@ -3,9 +3,7 @@ package lesson1.animal;
 public class Dog extends Animal {
 
     public Dog ( String name, String color, int age){
-        this.name = name;
-        this.color = color;
-        this.age = age;
+        super(name, color, age);
     }
 
     public void wof(){

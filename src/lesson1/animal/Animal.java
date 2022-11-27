@@ -5,17 +5,17 @@ public class Animal {
    String name;
     String color;
     int age;
-    //конструкторов (Animal) может быть сколько угодно и они вызываются при создании
-    public Animal(){
-        this.name = "Unknown";
-        this.color = "Unknown";
-        this.age = 1;
-    }
-    public Animal(String name){
-        this.name = name;
-        this.color = "Unknown";
-        this.age = 1;
-    }
+        //конструкторов (Animal) может быть сколько угодно и они вызываются при создании
+//    public Animal(){
+//        this.name = "Unknown";
+//        this.color = "Unknown";
+//        this.age = 1;
+//    }
+//    public Animal(String name){
+//        this.name = name;
+//        this.color = "Unknown";
+//        this.age = 1;
+//    }
     public Animal(String name, String color, int age){
         this.name = name;
         this.color = color;
