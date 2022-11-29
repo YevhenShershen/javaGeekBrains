@@ -27,4 +27,5 @@ public class Animal {
     public void voice(){
         System.out.println("ANIMAL VOICE");
     }
+    //абстрактный метод это метод без реализации и он находится только в абстрактных классах
 }
