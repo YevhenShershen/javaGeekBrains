@@ -5,6 +5,8 @@ import lesson1.animal.Dog;
 
 public class MainApp {
     public static void main(String[] args) {
+        Dog dog = new Dog("Bars", "Blue", 23);
+        dog.gawGaw();
 //        Cat cat = new Cat("Vaska", "White", 33, 122);
 //
 //        Cat cat2 = new Cat("Baron", "black", 44,12);
