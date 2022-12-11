@@ -29,16 +29,13 @@ public class Algorytmy {
             for (int j = 1; j < arr.length - i; j++) {
                 //1 > -22, Больше , тогда вытащи еденицу и на ее место поставь меньшее число -22
                 // с помощью переменной tem
-                System.out.println(Arrays.toString(arr));
                 if (arr[j - 1] > arr[j]) {
                     int temp = arr[j - 1];
                     arr[j - 1] = arr[j];
                     arr[j] = temp;
-                    count++;
                 }
             }
         }
-        System.out.println(count);
         System.out.println(Arrays.toString(arr));
     }
 
@@ -52,7 +49,7 @@ public class Algorytmy {
             arr[step] = arr[index];
             arr[index] = tmp;
         }
-        System.out.println(Arrays.toString(arr));
+
     }
 
     private static int min(int[] array, int start) {
@@ -65,5 +62,54 @@ public class Algorytmy {
             }
         }
         return minIndex;
+    }
+
+    //Быстрая сортировка - Dziel i zwyciężaj
+    //algorytm partycjonujący - realizuje podział zadanego zbioru danych na podzbiory(partycje)
+    //według ustalonego kryterium
+    public void sort(){
+        quickSort( arr, 0 , arr.length-1);
+        System.out.println(Arrays.toString(arr));
+    }
+    public static void quickSort(int[] arr, int from, int to) {
+
+        if (from < to) {
+
+            int divideIndex = partition(arr, from, to);
+
+            quickSort(arr, from, divideIndex - 1);
+
+            quickSort(arr, divideIndex, to);
+        }
+    }
+
+    private static int partition(int[] arr, int from, int to) {
+        int rightIndex = to;
+        int leftIndex = from;
+
+        int pivot = arr[from + (to - from) / 2];
+        while (leftIndex <= rightIndex) {
+
+            while (arr[leftIndex] < pivot) {
+                leftIndex++;
+            }
+
+            while (arr[rightIndex] > pivot) {
+                rightIndex--;
+            }
+
+            if (leftIndex <= rightIndex) {
+                swap(arr, rightIndex, leftIndex);
+                leftIndex++;
+                rightIndex--;
+            }
+        }
+        return leftIndex;
+    }
+
+    private static void swap(int[] array, int index1, int index2) {
+        int tmp = array[index1];
+        array[index1] = array[index2];
+        array[index2] = tmp;
     }
 }
