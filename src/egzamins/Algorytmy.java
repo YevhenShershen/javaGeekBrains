@@ -49,7 +49,7 @@ public class Algorytmy {
             arr[step] = arr[index];
             arr[index] = tmp;
         }
-
+        System.out.println(Arrays.toString(arr));
     }
 
     private static int min(int[] array, int start) {
