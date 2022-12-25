@@ -1,5 +1,5 @@
 package egzamins;
-
+//выделаем класс на который будем писать тесты и нажимаем alt+ENTER
 public class Osoba {
     private String imie;
     private int id = 0;
