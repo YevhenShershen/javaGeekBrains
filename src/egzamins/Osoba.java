@@ -1,4 +1,5 @@
 package egzamins;
+
 //выделаем класс на который будем писать тесты и нажимаем alt+ENTER
 public class Osoba {
     private String imie;
@@ -18,17 +19,15 @@ public class Osoba {
     }
 
     // konstruktor kopiujący
-    Osoba(Osoba copy) {
+    public Osoba(Osoba copy) {
         id = copy.id;
         imie = copy.imie;
         countObject++;
     }
 
     public void personInfo(String name) {
-        if (imie == null) {
-            System.out.println("Brak danych" + imie + countObject);
-
-
+        if (name == null || name == "") {
+            System.out.println("Brak danych" + name + countObject);
         } else {
             System.out.println("Cześć " + name + ", mam na imie " + countObject);
         }
